@@ -27,6 +27,7 @@ public class Task3Test {
         Assert.assertEquals(20, instance.getMaxProduct(new int[]{4, 2, 3, 4, 5}));
         Assert.assertEquals(20, instance.getMaxProduct(new int[]{5, 1, 3, 4, 1}));
         Assert.assertEquals(9, instance.getMaxProduct(new int[]{3, 1, 3, 3, 1}));
+        Assert.assertEquals(25, instance.getMaxProduct(new int[]{-1, -2, -3, -4, -5, 1, 25}));
     }
 
     @Test
@@ -46,6 +47,7 @@ public class Task3Test {
         Assert.assertTrue(instance.isPalindrome(""));
         Assert.assertFalse(instance.isPalindrome(null));
         Assert.assertTrue(instance.isPalindrome("акка"));
+        Assert.assertTrue(instance.isPalindrome("шалаш"));
         Assert.assertFalse(instance.isPalindrome("итмо"));
         Assert.assertFalse(instance.isPalindrome("тапок"));
     }
